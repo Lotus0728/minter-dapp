@@ -7,21 +7,28 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "GMonsters by Timka";
+const description = "Introducing Gmonsters - a collection of 5000 randomly generated NFTs featuring one-of-a-kind creatures with unique personalities. Created by a talented young artist, these quirky creatures are known as Garbage Monsters and are available for adoption on the Ethereum blockchain.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 4997,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Trash Can" },
+      { name: "Monster" },
+      { name: "Mouth" },
+      { name: "Eyes" },
+      { name: "Accessory" },
+      { name: "Head" },
+    ],
+  }, 
+  {
+    growEditionSizeTo: 5000,
+    layersOrder: [
+      { name: "Legendary" },
+
     ],
   },
 ];
@@ -31,13 +38,13 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1500,
+  height: 1500,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://garbagemonsters.io", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
